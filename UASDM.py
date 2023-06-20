@@ -1,9 +1,9 @@
 import pickle
 import streamlit as st
 
-dementia_model = pickle.load(open('dementia_dataset.sav','rb'))
+demential_model = pickle.load(open('dementia_dataset.sav','rb'))
 
-st.title('Prediksi Perilaku Pengidap Penyakit Dementia Berdasarkan Kondisi Kesehatan')
+st.title('Prediksi Perila ku Pengidap Penyakit Dementia Berdasarkan Kondisi Kesehatan')
 st.caption('Rahmat Ogi Sutiyono | 19/06/2023')
 st.write('\n')
 
@@ -21,7 +21,7 @@ with col2 :
 with col1 :
     CDR = st.number_input('Input CDR Pasien :')
 with col2 :
-   eTIV = st.number_input('Input Tahun Kelahiran Pasien :')
+   eTIV = st.number_input('Input eTIV Pasien :')
 with col1 :
     nWBV = st.number_input('Input nWBV Pasien  :')
 with col2 :
